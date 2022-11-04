@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsGroupReader", "NewsGroupReader\NewsGroupReader.csproj", "{D8964AC4-5161-4624-AA88-4F2713F67388}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8964AC4-5161-4624-AA88-4F2713F67388}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8964AC4-5161-4624-AA88-4F2713F67388}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8964AC4-5161-4624-AA88-4F2713F67388}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8964AC4-5161-4624-AA88-4F2713F67388}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A5CB3EC9-28C8-4645-91CC-F0C395285063}
+	EndGlobalSection
+EndGlobal

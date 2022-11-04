@@ -1,0 +1,63 @@
+﻿<Window x:Class="NewsGroupReader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NewsGroupReader"
+        mc:Ignorable="d"
+        Title="News Group Reader" Height="720" Width="1280">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="240"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <!--sidebar left-->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Button x:Name="btnConnect" 
+                    Content="connect" 
+                    Margin="20,0,20,0" 
+                    Height="20" 
+                    Click="btnConnect_Click">
+            </Button>
+            <TextBox x:Name="tbStatus" 
+                     Margin="20,0,20,0" 
+                     Height="20" 
+                     Grid.Row="1">
+            </TextBox>
+            <ComboBox x:Name="CbChooseGroup" 
+                      SelectionChanged="cbChooseGroup_SelectionChanged" 
+                      Margin="20,0,20,0" 
+                      Height="20" 
+                      Grid.Row="2">
+            </ComboBox>
+        </Grid>
+
+        <ListView x:Name="LvArticleList" 
+                  Grid.Row="1" 
+                  Grid.RowSpan="2">
+        </ListView>
+
+        <!--main part-->
+        <TextBlock x:Name="TbArticle" 
+                   Grid.Column="1" 
+                   Grid.RowSpan="4">
+        </TextBlock>
+    </Grid>
+</Window>
